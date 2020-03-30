@@ -1,0 +1,45 @@
+{
+  "name": "passwordmanager-api",
+  "version": "1.0.0",
+  "description": "Web and API in Node.js",
+  "main": "lib/bundle.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "8.0.6",
+    "body-parser": "1.19.0",
+    "connect-timeout": "1.9.0",
+    "cors": "^2.8.5",
+    "cryptr": "^6.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jsonwebtoken": "8.5.1",
+    "mongodb-extended-json": "1.11.0",
+    "mongodb-query-parser": "2.0.2",
+    "mongoose": "^5.9.2",
+    "nodemon": "2.0.2",
+    "uuid": "7.0.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.33",
+    "@babel/preset-env": "^7.0.0-beta.33",
+    "@babel/preset-react": "^7.0.0-beta.33",
+    "@babel/register": "^7.0.0-beta.33",
+    "@babel/runtime": "^7.0.0-beta.33",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "8.0.6",
+    "babel-plugin-root-import": "^5.1.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "babel": "babel src/server.js -o lib/bundle.js",
+    "build": "babel src/server.js -d lib",
+    "start": "npm run build && npx nodemon lib/bundle.js",
+    "serve": "npx nodemon ./src/server.js",
+    "test": "npm run build && mocha --require @babel/register"
+  },
+  "author": "Fidel"
+}

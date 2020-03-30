@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/preset-env", "babel-preset-es2015"],
+  "moduleRoot": "./src/server.js"
+}

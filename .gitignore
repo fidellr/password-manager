@@ -1,0 +1,25 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# api
+/api/node_modules
+/client/node_modules
+
+# client
+/client/node_modules
+/client/.pnp
+/client/.pnp.js
+# testing
+/client/coverage
+
+
+# production
+/client/build
+/api/build
+
+# misc
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
+/api/npm-debug.log*
+/api/yarn-debug.log*
+/api/yarn-error.log*
